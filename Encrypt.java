@@ -1,6 +1,6 @@
 public class Encrypt {
     private char[][] keySquare;
-    
+
     public Encrypt(String key) {
         keySquare = generateKeySquare(key);
     }
@@ -30,8 +30,12 @@ public class Encrypt {
         return matrix;
     }
 
-    public char[][] getKeySquare() {  // <-- Add this method
+    public char[][] getKeySquare() {
         return keySquare;
+    }
+
+    public char[][] getMatrix() {
+        return keySquare; // Now implemented
     }
 
     public String encrypt(String text) {

@@ -40,4 +40,8 @@ public class Decrypt {
         }
         return null;
     }
+
+    public char[][] getMatrix() {
+        return keySquare;
+    }
 }
